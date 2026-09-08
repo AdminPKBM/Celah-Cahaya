@@ -115,7 +115,7 @@ Untuk mendominasi kata kunci wilayah Garut:
 - **Nama Organisasi**: PKBM Celah Cahaya Garut
 - **NPSN**: P9970001
 - **Izin Operasional**: SK Disdik No. 421.1/2088-Disdik/2021
-- **Alamat**: Jl. Raya Garut - Bayongbong Km. 7, Desa Sukarame, Kec. Bayongbong, Kabupaten Garut, Jawa Barat 44161
+- **Alamat**: Kp. Sukawangi, Desa Sukawangi, Kec. Singajaya, Kab. Garut 
 - **Area Layanan**: Garut Kota, Bayongbong, Tarogong Kidul, Tarogong Kaler, Cilawu, Samarang, Leles, Kadungora, Cisurupan, Cikajang, serta layanan daring seluruh Indonesia.
 
 ---
