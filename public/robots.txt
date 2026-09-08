@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /api/private/
+
+# Sitemaps
+Sitemap: https://www.celahcahaya.sch.id/sitemap.xml
+Sitemap: https://www.celahcahaya.sch.id/rss.xml
+
+# Crawl-delay
+Crawl-delay: 1

@@ -1,0 +1,21 @@
+{
+  "name": "PKBM Celah Cahaya Garut",
+  "short_name": "Celah Cahaya",
+  "description": "Website Resmi PKBM Celah Cahaya - Pendidikan Kesetaraan Paket A, B, C & Keterampilan Vokasi di Garut",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0284c7",
+  "icons": [
+    {
+      "src": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=192&h=192&q=80",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=512&h=512&q=80",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

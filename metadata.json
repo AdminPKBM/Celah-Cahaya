@@ -1,0 +1,8 @@
+{
+  "name": "Celah Cahaya - PKBM \u0026 Pendidikan Kesetaraan",
+  "description": "Website resmi PKBM Celah Cahaya (celahcahaya.sch.id). Lembaga pendidikan nonformal dan kesetaraan Paket A, Paket B, dan Paket C, keterampilan vokasi, dan beasiswa di Garut.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
