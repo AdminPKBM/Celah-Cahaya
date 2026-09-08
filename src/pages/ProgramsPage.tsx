@@ -2,6 +2,7 @@ import React from 'react';
 import { PROGRAMS_DATA } from '../data/mockData';
 import { Breadcrumb } from '../components/Breadcrumb';
 import { CheckCircle2, ChevronRight, Clock, Award, BookOpen } from 'lucide-react';
+import { OptimizedImage } from '../components/OptimizedImage';
 
 interface ProgramsPageProps {
   onNavigate: (path: string) => void;
@@ -37,14 +38,22 @@ export const ProgramsPage: React.FC<ProgramsPageProps> = ({ onNavigate }) => {
             className="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-xs hover:shadow-md transition-all grid grid-cols-1 lg:grid-cols-12 gap-6 p-6 sm:p-8 items-center"
           >
             {/* Image & Badge */}
-            <div className="lg:col-span-4 h-64 lg:h-full rounded-2xl overflow-hidden relative">
-              <img 
+            <div 
+              onClick={() => {
+                onNavigate(`/program/${prog.slug}`);
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+              className="lg:col-span-4 h-56 sm:h-64 lg:h-72 w-full rounded-2xl overflow-hidden relative group cursor-pointer bg-stone-100"
+            >
+              <OptimizedImage 
                 src={prog.image} 
                 alt={prog.name} 
-                referrerPolicy="no-referrer"
-                className="w-full h-full object-cover"
+                width={600}
+                height={375}
+                aspectRatio="16/10"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
-              <span className="absolute top-3 left-3 bg-slate-900/90 text-amber-400 text-xs font-bold px-3 py-1 rounded-md shadow-xs">
+              <span className="absolute top-3 left-3 bg-slate-900/90 text-amber-400 text-xs font-bold px-3 py-1 rounded-md shadow-xs z-10">
                 {prog.badge}
               </span>
             </div>
@@ -56,7 +65,15 @@ export const ProgramsPage: React.FC<ProgramsPageProps> = ({ onNavigate }) => {
                   {prog.level}
                 </span>
                 <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mt-1">
-                  {prog.name}
+                  <button
+                    onClick={() => {
+                      onNavigate(`/program/${prog.slug}`);
+                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }}
+                    className="text-left hover:text-[#0284C7] transition-colors cursor-pointer"
+                  >
+                    {prog.name}
+                  </button>
                 </h2>
               </div>
 

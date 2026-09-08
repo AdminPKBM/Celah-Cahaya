@@ -705,102 +705,146 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           
           {/* Item 1 */}
-          <div className="group bg-white border border-stone-200 rounded-lg p-2.5 hover:border-stone-400 transition-colors">
-            <div className="relative overflow-hidden rounded-md aspect-4/3 bg-stone-100">
-              <OptimizedImage
-                src="https://blogger.googleusercontent.com/img/a/AVvXsEj3KzyMrdZuYBjAw8e-FrwdZYX1a7daYs3D7gYWaaTBpU4-FK9BVqOf6c1hsvfQ9v18h2C9oQySaNhTFUxINvOkSJzSDC45hGircCQCaWGNL5nKyrDalbnbS87KWAg-Yc_q-B3ocXP2Y80IdiuRxzQlFHycAINfPZEBUHAnr-nMgQNSCuxjYk9X-0IT-leO"
-                alt="Pelaksanaan Asesmen Nasional Berbasis Komputer ANBK di PKBM Celah Cahaya"
-                width={600}
-                height={450}
-                aspectRatio="4/3"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-            </div>
-            <div className="pt-2 px-1">
-              <span className="text-[10px] font-bold text-[#0284C7] uppercase tracking-wider block">
-                Akademik & Ujian
-              </span>
-              <div className="font-semibold text-xs text-stone-800 mt-0.5">
-                Simulasi Asesmen Nasional (ANBK)
+          <div 
+            onClick={() => {
+              onNavigate('/kegiatan');
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+            className="group bg-white border border-stone-200 rounded-lg p-2.5 hover:border-[#0284C7] hover:shadow-md transition-all cursor-pointer flex flex-col justify-between"
+          >
+            <div>
+              <div className="relative overflow-hidden rounded-md aspect-4/3 bg-stone-100">
+                <OptimizedImage
+                  src="https://blogger.googleusercontent.com/img/a/AVvXsEj3KzyMrdZuYBjAw8e-FrwdZYX1a7daYs3D7gYWaaTBpU4-FK9BVqOf6c1hsvfQ9v18h2C9oQySaNhTFUxINvOkSJzSDC45hGircCQCaWGNL5nKyrDalbnbS87KWAg-Yc_q-B3ocXP2Y80IdiuRxzQlFHycAINfPZEBUHAnr-nMgQNSCuxjYk9X-0IT-leO"
+                  alt="Pelaksanaan Asesmen Nasional Berbasis Komputer ANBK di PKBM Celah Cahaya"
+                  width={600}
+                  height={450}
+                  aspectRatio="4/3"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
               </div>
-              <p className="text-[11px] text-stone-500 mt-0.5 line-clamp-2">
-                Uji kesetaraan berbasis komputer di lab PKBM Celah Cahaya Singajaya.
-              </p>
+              <div className="pt-2 px-1">
+                <span className="text-[10px] font-bold text-[#0284C7] uppercase tracking-wider block">
+                  Akademik & Ujian
+                </span>
+                <div className="font-semibold text-xs text-stone-800 mt-0.5 group-hover:text-[#0284C7] transition-colors">
+                  Simulasi Asesmen Nasional (ANBK)
+                </div>
+                <p className="text-[11px] text-stone-500 mt-0.5 line-clamp-2">
+                  Uji kesetaraan berbasis komputer di lab PKBM Celah Cahaya Singajaya.
+                </p>
+              </div>
+            </div>
+            <div className="pt-2 px-1 text-[10px] font-semibold text-[#0284C7] group-hover:underline">
+              Lihat Dokumentasi →
             </div>
           </div>
 
           {/* Item 2 */}
-          <div className="group bg-white border border-stone-200 rounded-lg p-2.5 hover:border-stone-400 transition-colors">
-            <div className="relative overflow-hidden rounded-md aspect-4/3 bg-stone-100">
-              <OptimizedImage
-                src="https://blogger.googleusercontent.com/img/a/AVvXsEh2JnJiq3Y_dqrzfd779kKJ10iU0TWU7dP1OLgQf3V_M3dBQjM98B_RNJHJl5XqmksfpT3GYyUvsamlERFs6UCLL1F7BsZ2ACPzJERjW9TDlwVwXwykRGsgDm0-80mOI5PFCau0OFAVWHw2W04WxeFxP3pJwa_ovzZwCYJV-3viArIL4wKEQsRyMCmqFjrO"
-                alt="Workshop Vokasi AI dan digital marketing untuk wirausaha warga belajar Garut"
-                width={600}
-                height={450}
-                aspectRatio="4/3"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-            </div>
-            <div className="pt-2 px-1">
-              <span className="text-[10px] font-bold text-[#0284C7] uppercase tracking-wider block">
-                Vokasi Terapan
-              </span>
-              <div className="font-semibold text-xs text-stone-800 mt-0.5">
-                Pelatihan Literasi AI & Wirausaha
+          <div 
+            onClick={() => {
+              onNavigate('/kegiatan');
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+            className="group bg-white border border-stone-200 rounded-lg p-2.5 hover:border-[#0284C7] hover:shadow-md transition-all cursor-pointer flex flex-col justify-between"
+          >
+            <div>
+              <div className="relative overflow-hidden rounded-md aspect-4/3 bg-stone-100">
+                <OptimizedImage
+                  src="https://blogger.googleusercontent.com/img/a/AVvXsEh2JnJiq3Y_dqrzfd779kKJ10iU0TWU7dP1OLgQf3V_M3dBQjM98B_RNJHJl5XqmksfpT3GYyUvsamlERFs6UCLL1F7BsZ2ACPzJERjW9TDlwVwXwykRGsgDm0-80mOI5PFCau0OFAVWHw2W04WxeFxP3pJwa_ovzZwCYJV-3viArIL4wKEQsRyMCmqFjrO"
+                  alt="Workshop Vokasi AI dan digital marketing untuk wirausaha warga belajar Garut"
+                  width={600}
+                  height={450}
+                  aspectRatio="4/3"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
               </div>
-              <p className="text-[11px] text-stone-500 mt-0.5 line-clamp-2">
-                Pemanfaatan teknologi digital untuk promosi produk lokal Garut.
-              </p>
+              <div className="pt-2 px-1">
+                <span className="text-[10px] font-bold text-[#0284C7] uppercase tracking-wider block">
+                  Vokasi Terapan
+                </span>
+                <div className="font-semibold text-xs text-stone-800 mt-0.5 group-hover:text-[#0284C7] transition-colors">
+                  Pelatihan Literasi AI & Wirausaha
+                </div>
+                <p className="text-[11px] text-stone-500 mt-0.5 line-clamp-2">
+                  Pemanfaatan teknologi digital untuk promosi produk lokal Garut.
+                </p>
+              </div>
+            </div>
+            <div className="pt-2 px-1 text-[10px] font-semibold text-[#0284C7] group-hover:underline">
+              Lihat Dokumentasi →
             </div>
           </div>
 
           {/* Item 3 */}
-          <div className="group bg-white border border-stone-200 rounded-lg p-2.5 hover:border-stone-400 transition-colors">
-            <div className="relative overflow-hidden rounded-md aspect-4/3 bg-stone-100">
-              <OptimizedImage
-                src="https://blogger.googleusercontent.com/img/a/AVvXsEjO1GDsk9htNZC5gmuAlLN8btBxcF2jRQvAA01v1vdDlXK0YGWie4lf1V7NCH5y_IHPL5VpFOi-6vSJRNmfJA_zA_HFuVUL29ebu47x7G3iWTYMJG1miGAzHU_zMGiu44r6UAcQVuLCDFx-_9hBUyKXKtT7rbyDMruNLdwnuEHtBgR6Ac_TiK3xYBlPleUX"
-                alt="Momen pelepasan dan wisuda kelulusan warga belajar PKBM Celah Cahaya"
-                width={600}
-                height={450}
-                aspectRatio="4/3"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-            </div>
-            <div className="pt-2 px-1">
-              <span className="text-[10px] font-bold text-[#0284C7] uppercase tracking-wider block">
-                Kelulusan Resmi
-              </span>
-              <div className="font-semibold text-xs text-stone-800 mt-0.5">
-                Wisuda Warga Belajar Paket B & C
+          <div 
+            onClick={() => {
+              onNavigate('/kegiatan');
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+            className="group bg-white border border-stone-200 rounded-lg p-2.5 hover:border-[#0284C7] hover:shadow-md transition-all cursor-pointer flex flex-col justify-between"
+          >
+            <div>
+              <div className="relative overflow-hidden rounded-md aspect-4/3 bg-stone-100">
+                <OptimizedImage
+                  src="https://blogger.googleusercontent.com/img/a/AVvXsEjO1GDsk9htNZC5gmuAlLN8btBxcF2jRQvAA01v1vdDlXK0YGWie4lf1V7NCH5y_IHPL5VpFOi-6vSJRNmfJA_zA_HFuVUL29ebu47x7G3iWTYMJG1miGAzHU_zMGiu44r6UAcQVuLCDFx-_9hBUyKXKtT7rbyDMruNLdwnuEHtBgR6Ac_TiK3xYBlPleUX"
+                  alt="Momen pelepasan dan wisuda kelulusan warga belajar PKBM Celah Cahaya"
+                  width={600}
+                  height={450}
+                  aspectRatio="4/3"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
               </div>
-              <p className="text-[11px] text-stone-500 mt-0.5 line-clamp-2">
-                Penerimaan ijazah negara yang dihadiri Dinas Pendidikan Garut.
-              </p>
+              <div className="pt-2 px-1">
+                <span className="text-[10px] font-bold text-[#0284C7] uppercase tracking-wider block">
+                  Kelulusan Resmi
+                </span>
+                <div className="font-semibold text-xs text-stone-800 mt-0.5 group-hover:text-[#0284C7] transition-colors">
+                  Wisuda Warga Belajar Paket B & C
+                </div>
+                <p className="text-[11px] text-stone-500 mt-0.5 line-clamp-2">
+                  Penerimaan ijazah negara yang dihadiri Dinas Pendidikan Garut.
+                </p>
+              </div>
+            </div>
+            <div className="pt-2 px-1 text-[10px] font-semibold text-[#0284C7] group-hover:underline">
+              Lihat Dokumentasi →
             </div>
           </div>
 
           {/* Item 4 */}
-          <div className="group bg-white border border-stone-200 rounded-lg p-2.5 hover:border-stone-400 transition-colors">
-            <div className="relative overflow-hidden rounded-md aspect-4/3 bg-stone-100">
-              <OptimizedImage
-                src="https://blogger.googleusercontent.com/img/a/AVvXsEhzv92AS5x8T1d_yb03d3eYhx3USNhsOvsALrZ4FYuxa00Fx_KAH57hsFQSQnjdLF7DyNY23kBY-fd6MHc0pM4mcN4xF0I771mx_vMr-AvFAt975RccG7QTHROLqfknUNqaDLlNrtRzyQZyjc4a9JH-SXkIdtqP0htlJ0sk0EhQ-aut1b9fzx7iwllAoGV8"
-                alt="Sesi bimbingan konseling dan UTBK masuk perguruan tinggi negeri"
-                width={600}
-                height={450}
-                aspectRatio="4/3"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-            </div>
-            <div className="pt-2 px-1">
-              <span className="text-[10px] font-bold text-[#0284C7] uppercase tracking-wider block">
-                Bimbingan Karier
-              </span>
-              <div className="font-semibold text-xs text-stone-800 mt-0.5">
-                Persiapan Masuk PTN & UTBK
+          <div 
+            onClick={() => {
+              onNavigate('/kegiatan');
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+            className="group bg-white border border-stone-200 rounded-lg p-2.5 hover:border-[#0284C7] hover:shadow-md transition-all cursor-pointer flex flex-col justify-between"
+          >
+            <div>
+              <div className="relative overflow-hidden rounded-md aspect-4/3 bg-stone-100">
+                <OptimizedImage
+                  src="https://blogger.googleusercontent.com/img/a/AVvXsEhzv92AS5x8T1d_yb03d3eYhx3USNhsOvsALrZ4FYuxa00Fx_KAH57hsFQSQnjdLF7DyNY23kBY-fd6MHc0pM4mcN4xF0I771mx_vMr-AvFAt975RccG7QTHROLqfknUNqaDLlNrtRzyQZyjc4a9JH-SXkIdtqP0htlJ0sk0EhQ-aut1b9fzx7iwllAoGV8"
+                  alt="Sesi bimbingan konseling dan UTBK masuk perguruan tinggi negeri"
+                  width={600}
+                  height={450}
+                  aspectRatio="4/3"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
               </div>
-              <p className="text-[11px] text-stone-500 mt-0.5 line-clamp-2">
-                Konseling penjurusan dan strategi lolos seleksi perguruan tinggi negeri.
-              </p>
+              <div className="pt-2 px-1">
+                <span className="text-[10px] font-bold text-[#0284C7] uppercase tracking-wider block">
+                  Bimbingan Karier
+                </span>
+                <div className="font-semibold text-xs text-stone-800 mt-0.5 group-hover:text-[#0284C7] transition-colors">
+                  Persiapan Masuk PTN & UTBK
+                </div>
+                <p className="text-[11px] text-stone-500 mt-0.5 line-clamp-2">
+                  Konseling penjurusan dan strategi lolos seleksi perguruan tinggi negeri.
+                </p>
+              </div>
+            </div>
+            <div className="pt-2 px-1 text-[10px] font-semibold text-[#0284C7] group-hover:underline">
+              Lihat Dokumentasi →
             </div>
           </div>
 

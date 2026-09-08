@@ -18,8 +18,8 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({ article, onRead, featu
     >
       {/* Featured Image */}
       <div 
-        className={`relative overflow-hidden cursor-pointer ${
-          featured ? 'md:col-span-6 h-64 md:h-full' : 'h-48 sm:h-52 w-full'
+        className={`relative overflow-hidden cursor-pointer bg-stone-100 ${
+          featured ? 'md:col-span-6 aspect-16/10 md:aspect-auto md:h-full' : 'aspect-16/9 w-full'
         }`}
         onClick={() => onRead(article.slug)}
       >
@@ -32,7 +32,7 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({ article, onRead, featu
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
         {/* Category & Intent Badges */}
-        <div className="absolute top-3 left-3 flex flex-wrap gap-2">
+        <div className="absolute top-3 left-3 flex flex-wrap gap-2 z-10">
           <span className="bg-[#0284C7] text-white text-[11px] font-semibold px-2.5 py-1 rounded-md shadow-xs">
             {article.category}
           </span>
@@ -83,6 +83,8 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({ article, onRead, featu
             <img 
               src={article.author.avatar} 
               alt={article.author.name}
+              width={28}
+              height={28}
               className="w-7 h-7 rounded-full object-cover border border-slate-200" 
             />
             <span className="text-xs font-medium text-slate-700 truncate max-w-[130px]">

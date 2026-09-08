@@ -125,6 +125,8 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({ slug, onNa
             <img
               src={article.author.avatar}
               alt={article.author.name}
+              width={40}
+              height={40}
               className="w-10 h-10 rounded-full object-cover border border-slate-200 shadow-2xs"
             />
             <div>
@@ -154,19 +156,16 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({ slug, onNa
       </header>
 
       {/* Featured Image (Optimized WebP for LCP) */}
-      <div className="rounded-3xl overflow-hidden shadow-lg border border-slate-200">
+      <div className="rounded-3xl overflow-hidden shadow-lg border border-slate-200 bg-stone-100 aspect-16/9 w-full">
         <OptimizedImage
           src={article.featuredImage}
           alt={article.featuredImageAlt}
           width={1200}
-          height={630}
+          height={675}
           isLCP={true}
           aspectRatio="16/9"
-          className="w-full h-72 sm:h-96 object-cover"
+          className="w-full h-full object-cover"
         />
-        <div className="bg-slate-50 px-4 py-2 text-[11px] text-slate-500 italic text-center border-t border-slate-200">
-          {article.featuredImageAlt}
-        </div>
       </div>
 
       {/* Table of Contents (Daftar Isi) */}
@@ -301,6 +300,8 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({ slug, onNa
         <img
           src={article.author.avatar}
           alt={article.author.name}
+          width={64}
+          height={64}
           className="w-16 h-16 rounded-full object-cover border-2 border-[#0284C7] shrink-0"
         />
         <div className="space-y-1 text-center sm:text-left">

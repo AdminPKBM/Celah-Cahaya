@@ -133,21 +133,21 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
             <div className="space-y-2 text-xs text-slate-700">
               <div className="flex items-center justify-between p-2.5 bg-white rounded-xl border border-slate-200">
                 <span>XML Sitemap (Sitemap Index)</span>
-                <a href="/sitemap.xml" target="_blank" className="font-bold text-[#0284C7] hover:text-[#0369a1] flex items-center">
+                <a href="/sitemap.xml" target="_blank" rel="noopener noreferrer" className="font-bold text-[#0284C7] hover:text-[#0369a1] flex items-center">
                   <span>/sitemap.xml</span>
                   <ExternalLink className="w-3 h-3 ml-1" />
                 </a>
               </div>
               <div className="flex items-center justify-between p-2.5 bg-white rounded-xl border border-slate-200">
                 <span>Robots.txt Crawl Directives</span>
-                <a href="/robots.txt" target="_blank" className="font-bold text-[#0284C7] hover:text-[#0369a1] flex items-center">
+                <a href="/robots.txt" target="_blank" rel="noopener noreferrer" className="font-bold text-[#0284C7] hover:text-[#0369a1] flex items-center">
                   <span>/robots.txt</span>
                   <ExternalLink className="w-3 h-3 ml-1" />
                 </a>
               </div>
               <div className="flex items-center justify-between p-2.5 bg-white rounded-xl border border-slate-200">
                 <span>RSS 2.0 Feed</span>
-                <a href="/rss.xml" target="_blank" className="font-bold text-[#0284C7] hover:text-[#0369a1] flex items-center">
+                <a href="/rss.xml" target="_blank" rel="noopener noreferrer" className="font-bold text-[#0284C7] hover:text-[#0369a1] flex items-center">
                   <span>/rss.xml</span>
                   <ExternalLink className="w-3 h-3 ml-1" />
                 </a>

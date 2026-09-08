@@ -106,12 +106,12 @@ export const ProgramDetailPage: React.FC<ProgramDetailPageProps> = ({ slug, onNa
             </div>
           </div>
 
-          <div className="lg:col-span-4 h-64 lg:h-72 rounded-2xl overflow-hidden border-2 border-white/20">
+          <div className="lg:col-span-4 aspect-16/10 w-full rounded-2xl overflow-hidden border-2 border-white/20 bg-slate-800">
             <OptimizedImage 
               src={program.image} 
               alt={program.name} 
               width={600}
-              height={360}
+              height={375}
               isLCP={true}
               aspectRatio="16/10"
               className="w-full h-full object-cover" 

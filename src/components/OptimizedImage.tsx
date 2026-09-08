@@ -55,8 +55,15 @@ export const OptimizedImage: React.FC<OptimizedImageProps> = ({
   const originalSrc = src;
   const isWebPSource = webpSrc.endsWith('.webp') || webpSrc.includes('fm=webp');
 
+  const containerStyle: React.CSSProperties = {
+    ...(aspectRatio ? { aspectRatio } : {})
+  };
+
   return (
-    <picture className={`inline-block overflow-hidden ${pictureClassName}`}>
+    <picture 
+      className={`block w-full h-full overflow-hidden ${pictureClassName}`}
+      style={containerStyle}
+    >
       {/* Modern WebP format source */}
       {!hasError && isWebPSource && (
         <source
@@ -67,7 +74,7 @@ export const OptimizedImage: React.FC<OptimizedImageProps> = ({
 
       {/* Fallback Image */}
       <img
-        src={hasError ? originalSrc : (isWebPSource ? webpSrc : originalSrc)}
+        src={hasError ? (originalSrc || '/assets/images/hero-kesetaraan.webp') : (isWebPSource ? webpSrc : originalSrc)}
         alt={alt}
         width={width}
         height={height}

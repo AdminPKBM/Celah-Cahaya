@@ -63,18 +63,18 @@ export const KegiatanPage: React.FC<KegiatanPageProps> = ({ onNavigate }) => {
         {ACTIVITIES.map((act, index) => (
           <div
             key={index}
-            className="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-xs hover:shadow-md transition-all flex flex-col justify-between"
+            className="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-xs hover:shadow-md transition-all flex flex-col justify-between group"
           >
-            <div className="h-60 overflow-hidden relative">
+            <div className="aspect-16/10 w-full overflow-hidden relative bg-stone-100">
               <OptimizedImage
                 src={act.image}
                 alt={act.title}
                 width={800}
-                height={480}
+                height={500}
                 aspectRatio="16/10"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500"
               />
-              <span className="absolute top-3 left-3 bg-slate-900/90 text-amber-400 text-xs font-bold px-3 py-1 rounded-md">
+              <span className="absolute top-3 left-3 bg-slate-900/90 text-amber-400 text-xs font-bold px-3 py-1 rounded-md z-10">
                 {act.category}
               </span>
             </div>
@@ -83,7 +83,7 @@ export const KegiatanPage: React.FC<KegiatanPageProps> = ({ onNavigate }) => {
                 <Calendar className="w-3.5 h-3.5" />
                 <span>{act.date}</span>
               </div>
-              <h3 className="text-lg font-bold text-slate-900 leading-snug">
+              <h3 className="text-lg font-bold text-slate-900 leading-snug group-hover:text-[#0284C7] transition-colors">
                 {act.title}
               </h3>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -93,6 +93,36 @@ export const KegiatanPage: React.FC<KegiatanPageProps> = ({ onNavigate }) => {
           </div>
         ))}
       </div>
+
+      {/* CTA Ingin Ikut Berpartisipasi */}
+      <section className="bg-[#0B192C] text-white p-8 sm:p-10 rounded-3xl flex flex-col md:flex-row items-center justify-between gap-6">
+        <div>
+          <h3 className="text-xl sm:text-2xl font-bold">Ingin Bergabung Bersama Warga Belajar Kami?</h3>
+          <p className="text-xs sm:text-sm text-slate-400 mt-1 max-w-xl leading-relaxed">
+            Daftarkan diri Anda untuk jenjang Paket A, Paket B, atau Paket C dan raih ijazah resmi negara dengan jadwal belajar fleksibel.
+          </p>
+        </div>
+        <div className="flex flex-wrap gap-3 shrink-0">
+          <button
+            onClick={() => {
+              onNavigate('/pendaftaran');
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+            className="px-6 py-3 bg-[#0284C7] hover:bg-[#0369A1] text-white font-bold rounded-xl text-xs sm:text-sm transition-all shadow-xs cursor-pointer"
+          >
+            Daftar Sekarang
+          </button>
+          <button
+            onClick={() => {
+              onNavigate('/program');
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+            className="px-6 py-3 bg-slate-800 hover:bg-slate-700 text-white font-semibold rounded-xl text-xs sm:text-sm transition-all cursor-pointer"
+          >
+            Lihat Pilihan Program
+          </button>
+        </div>
+      </section>
     </div>
   );
 };
