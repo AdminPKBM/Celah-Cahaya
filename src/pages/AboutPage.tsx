@@ -47,7 +47,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
       {/* Gedung Sekretariat & Kampus PKBM (Optimized WebP for LCP) */}
       <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg border border-slate-200 aspect-16/9 sm:aspect-21/9 max-h-96">
         <OptimizedImage
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOP1I-pT6Z56KBzmCixhjxGdadnmEHoocfHD_fgsKJUeIkmPq6Mwxfq9md&s=10"
+          src="/assets/images/gedung-pkbm.webp"
           alt="Gedung Sekretariat dan Kampus PKBM Celah Cahaya di Singajaya Garut Jawa Barat"
           width={1000}
           height={430}

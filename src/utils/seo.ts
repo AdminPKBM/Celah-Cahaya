@@ -23,7 +23,7 @@ export function updateMetaTags({
   canonicalPath = '',
   keywords = [],
   ogType = 'website',
-  ogImage = 'https://blogger.googleusercontent.com/img/a/AVvXsEiM0r1eSc78SJ4Q-nxNdLOj5nxM0s8uRn6WyfbwYcQ8xKvm65WShLoWeGoeU5EcTPssWIGZI36nGSHwl8QKP9MVxQIO6JME6LzpJF1cFLZrAmjjQm4TDkPbPjYOkFC_Jsxy8_ko72EbL0yMLc_2yi984-tJ7QOquSYqNFMDByp7IgHQ1BAhtN-GcVydeNK2',
+  ogImage = 'https://blogger.googleusercontent.com/img/a/AVvXsEhWfI4H4uVtyAqg-a-tYYkMV-E-invtSbOIT9z7BtpkiFc7Yq_VRlKD4sAVmg-l7EchzdfhVJechv7PlNmt3f3VTVQFq2fB-HmdZctQngiZmGnPB31nXDgT4Xc4i46-cgTtg0pNcJFmwCLTwjla7aS0pBz-erB6xrfIHTg9YWAfnccARN9nMZPrXEiCZewu',
   publishedTime,
   modifiedTime,
   authorName = 'PKBM Celah Cahaya',

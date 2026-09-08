@@ -93,13 +93,13 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             {/* Right Column: High-Dignity Academic Visual & Institutional Caption */}
             <div className="lg:col-span-5">
               <div className="bg-white p-2.5 sm:p-3 border border-stone-200 shadow-sm rounded-lg">
-                <div className="relative overflow-hidden rounded-md bg-stone-100 aspect-16/11">
+                <div className="relative overflow-hidden rounded-md bg-stone-100 aspect-16/9">
                   <OptimizedImage
-                    src="https://blogger.googleusercontent.com/img/a/AVvXsEiT8hhK7gpl6VbfrU_D8muZjCK31xuvcfDg0XJ7Vx_xR68g4lImyRebb43DWMSeqiXv6si_78InlPWo-arCgbGBHW1k6SlHzJ1iV9rw-L_skwiljMfr_DutD2Anxfqy_me-pB0HL0LdcRHgOOs6D3VXmn7yJgTNOGyzZSvTWXcNkkyJOJt8PSFz30-CVVmb"
-                    alt="Belajar, Berkembang, dan Membangun Masa Depan di PKBM Celah Cahaya Garut"
+                    src="https://blogger.googleusercontent.com/img/a/AVvXsEhWfI4H4uVtyAqg-a-tYYkMV-E-invtSbOIT9z7BtpkiFc7Yq_VRlKD4sAVmg-l7EchzdfhVJechv7PlNmt3f3VTVQFq2fB-HmdZctQngiZmGnPB31nXDgT4Xc4i46-cgTtg0pNcJFmwCLTwjla7aS0pBz-erB6xrfIHTg9YWAfnccARN9nMZPrXEiCZewu"
+                    alt="Pendidikan Kesetaraan dan Warga Belajar PKBM Celah Cahaya Garut"
                     width={800}
-                    height={550}
-                    aspectRatio="16/11"
+                    height={450}
+                    aspectRatio="16/9"
                     isLCP={true}
                     className="w-full h-full object-cover transition-all duration-700 hover:scale-103"
                   />
@@ -341,7 +341,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               <div className="bg-white p-3 border border-stone-200 shadow-sm rounded-lg">
                 <div className="overflow-hidden rounded-md bg-stone-100 aspect-4/3">
                   <OptimizedImage
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOP1I-pT6Z56KBzmCixhjxGdadnmEHoocfHD_fgsKJUeIkmPq6Mwxfq9md&s=10"
+                    src="/assets/images/gedung-pkbm.webp"
                     alt="Gedung sekretariat dan pusat kegiatan belajar masyarakat PKBM Celah Cahaya Garut"
                     width={800}
                     height={600}
