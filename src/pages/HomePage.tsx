@@ -7,6 +7,7 @@ import {
 import { INSTITUTION_INFO, PROGRAMS_DATA, INITIAL_ARTICLES } from '../data/mockData';
 import { ArticleCard } from '../components/ArticleCard';
 import { OptimizedImage } from '../components/OptimizedImage';
+import { AdSenseUnit } from '../components/AdSenseUnit';
 
 interface HomePageProps {
   onNavigate: (path: string) => void;
@@ -676,6 +677,16 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
           ))}
         </div>
       </section>
+
+      {/* Strategic Mid-Page Leaderboard AdSense Placement (High Viewability & Conversion) */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <AdSenseUnit
+          slot="8541296373"
+          format="auto"
+          label="SPONSOR & REKOMENDASI PENDIDIKAN"
+          minHeight="min-h-[100px] sm:min-h-[160px]"
+        />
+      </div>
 
       {/* =========================================================================
           7. SECTION KEGIATAN / GALERI VISUAL (MODERN MASONRY / ASYMMETRIC)

@@ -3,6 +3,7 @@ import { PROGRAMS_DATA } from '../data/mockData';
 import { Breadcrumb } from '../components/Breadcrumb';
 import { CheckCircle2, ChevronRight, Clock, Award, BookOpen } from 'lucide-react';
 import { OptimizedImage } from '../components/OptimizedImage';
+import { AdSenseUnit } from '../components/AdSenseUnit';
 
 interface ProgramsPageProps {
   onNavigate: (path: string) => void;
@@ -125,6 +126,14 @@ export const ProgramsPage: React.FC<ProgramsPageProps> = ({ onNavigate }) => {
           </div>
         ))}
       </div>
+
+      {/* Contextual Education & Career Ad Placement (High CPC/CPA Intent) */}
+      <AdSenseUnit
+        slot="8541296374"
+        format="auto"
+        label="REKOMENDASI KAMPUS & PENGEMBANGAN SKILL (SPONSOR)"
+        minHeight="min-h-[120px] sm:min-h-[220px]"
+      />
     </div>
   );
 };

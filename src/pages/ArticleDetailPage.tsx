@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { INITIAL_ARTICLES, INSTITUTION_INFO } from '../data/mockData';
 import { Breadcrumb } from '../components/Breadcrumb';
 import { OptimizedImage } from '../components/OptimizedImage';
+import { AdSenseUnit } from '../components/AdSenseUnit';
 import { 
   Calendar, Clock, Share2, Bookmark, CheckCircle2, 
   HelpCircle, ArrowRight, User, Star, Copy, Check, ExternalLink 
@@ -268,14 +269,36 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({ slug, onNa
 
           // Default Paragraph with simple bold support
           return (
-            <p key={index} className="leading-relaxed" dangerouslySetInnerHTML={{
-              __html: paragraph
-                .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-                .replace(/\*(.*?)\*/g, '<em>$1</em>')
-            }} />
+            <React.Fragment key={index}>
+              <p className="leading-relaxed" dangerouslySetInnerHTML={{
+                __html: paragraph
+                  .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                  .replace(/\*(.*?)\*/g, '<em>$1</em>')
+              }} />
+              {/* Strategic In-Article AdSense Unit (High Viewability & Highest Dwell Time CPC/CPM) */}
+              {index === 2 && (
+                <AdSenseUnit
+                  slot="8541296371"
+                  format="fluid"
+                  layout="in-article"
+                  label="REKOMENDASI PENDIDIKAN & KARIER (SPONSOR)"
+                  className="my-8"
+                  minHeight="min-h-[140px] sm:min-h-[280px]"
+                />
+              )}
+            </React.Fragment>
           );
         })}
       </div>
+
+      {/* High-Intent Matched Content / Bottom AdSense Placement */}
+      <AdSenseUnit
+        slot="8541296372"
+        format="auto"
+        label="REKOMENDASI KAMPUS, BEASISWA & PELATIHAN RESMI"
+        className="my-8"
+        minHeight="min-h-[120px] sm:min-h-[250px]"
+      />
 
       {/* FAQ Accordion Section for this Article */}
       {article.faqs && article.faqs.length > 0 && (
