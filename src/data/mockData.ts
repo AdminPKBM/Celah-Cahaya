@@ -24,9 +24,9 @@ export const INSTITUTION_INFO = {
   whatsapp: '6282119362454',
   email: 'info@celahcahaya.sch.id',
   operationalHours: 'Senin - Sabtu: 08.00 - 17.00 WIB (Layanan Online 24 Jam)',
-  tagline: 'Membuka Celah Harapan, Menerangi Masa Depan Pendidikan Indonesia',
+  tagline: 'Membuka Pintu Harapan, Menerangi Langkah Pendidikan Anda',
   logoUrl: 'https://i.ibb.co.com/FL9BY0jW/LOGO-PKBM-CELAH-CAHAYA-1-1-1.webp',
-  officialProfile: 'PKBM Celah Cahaya merupakan satuan pendidikan swasta berbentuk Pusat Kegiatan Belajar Masyarakat (PKBM) yang menyelenggarakan layanan pendidikan masyarakat pada jenjang Pendidikan Masyarakat (DIKMAS). PKBM Celah Cahaya memiliki NPSN P9984574 dan beralamat di Kp. Sukawangi, Desa Sukawangi, Kecamatan Singajaya, Kabupaten Garut, Provinsi Jawa Barat. Dalam penyelenggaraan pendidikan, PKBM Celah Cahaya menyediakan layanan Program Pendidikan Kesetaraan Paket B dan Paket C sebagai alternatif layanan pendidikan bagi masyarakat yang membutuhkan akses pendidikan nonformal yang setara dengan jenjang pendidikan formal. PKBM Celah Cahaya memiliki Izin Operasional dengan Nomor SK 421.9/1145-DISDIK, dengan TMT SK Operasional 22 Juli 2019. Keberadaan PKBM ini diharapkan dapat memberikan kesempatan yang lebih luas kepada masyarakat untuk memperoleh layanan pendidikan yang berkualitas, fleksibel, inklusif, dan berkelanjutan. Untuk informasi dan layanan lebih lanjut, masyarakat dapat menghubungi PKBM Celah Cahaya melalui WhatsApp di +62 821-1936-2454.',
+  officialProfile: 'PKBM Celah Cahaya adalah satuan pendidikan nonformal swasta berbentuk Pusat Kegiatan Belajar Masyarakat (PKBM) di bawah binaan Direktorat Pendidikan Masyarakat (DIKMAS). Lembaga ini memiliki NPSN resmi P9984574 dan berpusat di Kp. Sukawangi, Desa Sukawangi, Kecamatan Singajaya, Kabupaten Garut, Jawa Barat. Kami menyelenggarakan Program Pendidikan Kesetaraan Paket A, Paket B, dan Paket C sebagai jalur pendidikan legal yang setara dengan SD, SMP, dan SMA bagi masyarakat yang membutuhkan akses belajar fleksibel. Beroperasi berdasarkan Izin Operasional Dinas Pendidikan Kabupaten Garut No. 421.9/1145-DISDIK (TMT 22 Juli 2019), PKBM Celah Cahaya hadir untuk memastikan setiap warga memperoleh kesempatan belajar yang layak, bermutu, dan terjangkau hingga meraih ijazah resmi negara.',
   headerBanner: 'https://blogger.googleusercontent.com/img/a/AVvXsEiM0r1eSc78SJ4Q-nxNdLOj5nxM0s8uRn6WyfbwYcQ8xKvm65WShLoWeGoeU5EcTPssWIGZI36nGSHwl8QKP9MVxQIO6JME6LzpJF1cFLZrAmjjQm4TDkPbPjYOkFC_Jsxy8_ko72EbL0yMLc_2yi984-tJ7QOquSYqNFMDByp7IgHQ1BAhtN-GcVydeNK2',
   headerBannerWebp: '/assets/images/header-komunitas-ngejah.webp',
   heroImage: 'https://blogger.googleusercontent.com/img/a/AVvXsEhWfI4H4uVtyAqg-a-tYYkMV-E-invtSbOIT9z7BtpkiFc7Yq_VRlKD4sAVmg-l7EchzdfhVJechv7PlNmt3f3VTVQFq2fB-HmdZctQngiZmGnPB31nXDgT4Xc4i46-cgTtg0pNcJFmwCLTwjla7aS0pBz-erB6xrfIHTg9YWAfnccARN9nMZPrXEiCZewu',
@@ -44,31 +44,31 @@ export const PROGRAMS_DATA: Program[] = [
     name: 'Pendidikan Kesetaraan Paket A',
     level: 'Setara Sekolah Dasar (SD / MI)',
     badge: 'Ijazah Resmi Negara',
-    targetAudience: 'Anak usia sekolah 7-12 tahun putus sekolah atau usia dewasa yang belum memiliki ijazah SD.',
-    description: 'Program pendidikan nonformal tingkat dasar untuk membekali warga belajar kemampuan literasi baca tulis, numerasi, pembentukan karakter mulia, dan keterampilan hidup mandiri yang diakui setara ijazah Sekolah Dasar resmi.',
+    targetAudience: 'Anak usia 7-12 tahun yang terhenti sekolahnya atau masyarakat dewasa yang belum memiliki ijazah SD.',
+    description: 'Program pendidikan nonformal tingkat dasar yang membekali warga belajar kemampuan membaca, menulis, berhitung, pembentukan budi pekerti, dan keterampilan praktis sehari-hari dengan ijazah resmi negara.',
     curriculum: [
       'Pendidikan Agama dan Budi Pekerti',
       'Pendidikan Pancasila & Kewarganegaraan',
-      'Bahasa Indonesia (Literasi Fungsional)',
+      'Bahasa Indonesia Praktis',
       'Matematika Dasar & Logika Sehari-hari',
       'Ilmu Pengetahuan Alam dan Sosial (IPAS)',
-      'Keterampilan Terapan & Seni Budaya Sunda Lokal'
+      'Keterampilan Hidup & Seni Budaya Lokal'
     ],
-    learningMethod: 'Tatap muka berkala, bimbingan tutor personal, dan modul belajar mandiri ramah pemula.',
-    duration: '1 - 6 Tahun (Disesuaikan asesmen riwayat belajar sebelumnya / rapor pindahan)',
+    learningMethod: 'Tatap muka berkala, pendampingan tutor yang ramah, dan modul belajar mandiri yang mudah dipahami.',
+    duration: '1 - 6 Tahun (Disesuaikan dengan hasil penelusuran riwayat belajar atau rapor pindahan)',
     requirements: [
       'Fotokopi Kartu Keluarga (KK) & Akta Kelahiran',
-      'KTP Orang Tua/Wali (atau KTP sendiri bagi usia dewasa)',
+      'KTP Orang Tua/Wali (atau KTP sendiri bagi peserta dewasa)',
       'Pas foto ukuran 3x4 (4 lembar, latar belakang merah)',
-      'Rapor pindahan sekolah sebelumnya (bila pernah bersekolah)'
+      'Buku rapor pindahan (jika pernah bersekolah sebelumnya)'
     ],
     benefits: [
-      'Ijazah resmi terdaftar di database Kementerian Pendidikan (Dapodik)',
-      'Dapat melanjutkan langsung ke SMP formal atau Paket B',
-      'Waktu belajar fleksibel, tidak mengganggu waktu kerja/bantu keluarga',
-      'Gratis bagi anak dari keluarga pemegang KIP / PKH'
+      'Ijazah resmi terdaftar di pangkalan data Dapodik Kemendikbudristek',
+      'Dapat langsung melanjutkan ke SMP formal maupun Paket B',
+      'Waktu belajar fleksibel tanpa mengganggu aktivitas bekerja atau membantu keluarga',
+      'Tersedia kuota bebas biaya untuk pemegang KIP atau Program Keluarga Harapan'
     ],
-    tuitionFee: 'Subsidi Pemerintah (Tersedia Kuota Gratis Afirmasi KIP)',
+    tuitionFee: 'Bantuan Subsidi Pemerintah (Tersedia Kuota Bebas Biaya KIP)',
     scholarshipAvailable: true,
     image: 'https://blogger.googleusercontent.com/img/a/AVvXsEj3KzyMrdZuYBjAw8e-FrwdZYX1a7daYs3D7gYWaaTBpU4-FK9BVqOf6c1hsvfQ9v18h2C9oQySaNhTFUxINvOkSJzSDC45hGircCQCaWGNL5nKyrDalbnbS87KWAg-Yc_q-B3ocXP2Y80IdiuRxzQlFHycAINfPZEBUHAnr-nMgQNSCuxjYk9X-0IT-leO',
     iconName: 'BookOpen'
@@ -78,33 +78,33 @@ export const PROGRAMS_DATA: Program[] = [
     slug: 'paket-b',
     name: 'Pendidikan Kesetaraan Paket B',
     level: 'Setara Sekolah Menengah Pertama (SMP / MTs)',
-    badge: 'Favorit Pekerja Muda',
-    targetAudience: 'Lulusan SD/Paket A yang tertunda melanjutkan, anak putus sekolah SMP, atlet, santri, atau pekerja usia muda.',
-    description: 'Program kesetaraan jenjang menengah pertama yang dirancang efisien dengan metode blended learning. Membantu warga belajar meraih ijazah setara SMP untuk syarat kerja maupun melangkah ke SMA / Paket C.',
+    badge: 'Pilihan Tepat untuk Pekerja',
+    targetAudience: 'Lulusan SD atau Paket A yang sempat tertunda melanjutkan, santri, pekerja muda, atau peserta putus sekolah SMP.',
+    description: 'Program pendidikan kesetaraan tingkat menengah pertama dengan metode belajar terpadu (tatap muka akhir pekan dan modul mandiri). Membantu warga belajar meraih ijazah setara SMP untuk keperluan kerja maupun melanjutkan ke SMA atau Paket C.',
     curriculum: [
       'Pendidikan Agama & Budi Pekerti',
       'Pendidikan Kewarganegaraan',
-      'Bahasa Indonesia & Bahasa Inggris Komunikatif',
+      'Bahasa Indonesia & Bahasa Inggris Terapan',
       'Matematika Terapan',
       'Ilmu Pengetahuan Alam (IPA Terpadu)',
       'Ilmu Pengetahuan Sosial (IPS)',
-      'Teknologi Informasi & Komunikasi Dasar (Pengenalan Komputer & Internet Sehat)'
+      'Dasar Komputer dan Literasi Digital'
     ],
-    learningMethod: 'Blended learning: Pertemuan tatap muka akhir pekan + modul daring LMS Celah Cahaya.',
-    duration: '1 - 3 Tahun (Tergantung jenjang terakhir yang pernah ditempuh)',
+    learningMethod: 'Metode gabungan (blended learning): kelas tatap muka akhir pekan dan modul belajar mandiri.',
+    duration: '1 - 3 Tahun (Disesuaikan dengan jenjang kelas terakhir yang pernah ditempuh)',
     requirements: [
-      'Fotokopi Ijazah SD / MI / Paket A dilegalisir (3 lembar)',
+      'Fotokopi Ijazah SD / MI / Paket A dilegalisasi (3 lembar)',
       'Fotokopi Kartu Keluarga (KK) & KTP / KIA',
-      'Surat keterangan pindah & buku rapor (bila putus sekolah dari SMP)',
+      'Buku rapor dan surat pindah (khusus peserta pindahan SMP)',
       'Pas foto 3x4 berwarna (5 lembar)'
     ],
     benefits: [
-      'Ijazah berkekuatan hukum sama persis dengan ijazah SMP formal',
-      'Bisa melanjutkan ke SMA Negeri, SMK Negeri, atau Paket C',
-      'Bisa digunakan untuk syarat kenaikan golongan kerja dan administrasi resmi',
-      'Didampingi tutor yang sabar dan modul ramah pekerja'
+      'Ijazah berkekuatan hukum setara dengan ijazah SMP formal',
+      'Dapat digunakan untuk mendaftar ke SMA, SMK, atau Paket C',
+      'Memenuhi syarat kelengkapan administrasi kerja dan kenaikan golongan',
+      'Didampingi tutor berpengalaman dengan suasana belajar yang mendukung'
     ],
-    tuitionFee: 'Biaya Terjangkau & Dapat Diangsur (Program Afirmasi KIP Tersedia)',
+    tuitionFee: 'Biaya Terjangkau & Bisa Diangsur (Tersedia Jalur Afirmasi KIP)',
     scholarshipAvailable: true,
     image: 'https://blogger.googleusercontent.com/img/a/AVvXsEh2JnJiq3Y_dqrzfd779kKJ10iU0TWU7dP1OLgQf3V_M3dBQjM98B_RNJHJl5XqmksfpT3GYyUvsamlERFs6UCLL1F7BsZ2ACPzJERjW9TDlwVwXwykRGsgDm0-80mOI5PFCau0OFAVWHw2W04WxeFxP3pJwa_ovzZwCYJV-3viArIL4wKEQsRyMCmqFjrO',
     iconName: 'Award'
@@ -115,33 +115,33 @@ export const PROGRAMS_DATA: Program[] = [
     name: 'Pendidikan Kesetaraan Paket C',
     level: 'Setara Sekolah Menengah Atas (SMA / MA) - Jurusan IPS & IPA',
     badge: 'Bisa Kuliah & Kerja Formal',
-    targetAudience: 'Masyarakat dari segala usia yang membutuhkan ijazah setara SMA untuk kuliah PTN/PTS, promosi jabatan, daftar TNI/Polri/BUMN/CPNS, atau sertifikasi keahlian.',
-    description: 'Program unggulan Celah Cahaya berakreditasi resmi. Mempersiapkan warga belajar tidak hanya memperoleh ijazah negara setara SMA yang sah untuk kuliah dan seleksi kedinasan, namun juga dibekali sertifikasi keterampilan digital dan kewirausahaan modern.',
+    targetAudience: 'Masyarakat umum dan karyawan yang membutuhkan ijazah setara SMA untuk kuliah, promosi jabatan, seleksi kerja, TNI/Polri, CPNS, atau izin usaha.',
+    description: 'Program pendidikan kesetaraan tingkat atas yang dirancang untuk membuka peluang masa depan Anda. Selain memperoleh ijazah resmi negara yang sah untuk kuliah dan seleksi kerja, peserta juga dibekali keterampilan digital terapan.',
     curriculum: [
       'Pendidikan Agama & Budi Pekerti',
       'Pendidikan Pancasila & Kewarganegaraan',
-      'Bahasa Indonesia & Bahasa Inggris untuk Karier',
-      'Matematika Terapan & Statistika Praktis',
-      'Jurusan IPS: Ekonomi, Sosiologi, Geografi Terapan',
-      'Jurusan IPA: Biologi Terapan, Fisika & Kimia Dasar',
-      'Mata Pelajaran Pilihan: Keterampilan Digital AI, Desain Grafis, & E-Commerce'
+      'Bahasa Indonesia & Bahasa Inggris Komunikasi Kerja',
+      'Matematika Terapan',
+      'Peminatan IPS: Ekonomi, Sosiologi, Geografi',
+      'Peminatan IPA: Biologi, Fisika, Kimia Dasar',
+      'Keterampilan Pilihan: Desain Grafis Praktis, Komputer Perkantoran, dan Pemasaran Daring'
     ],
-    learningMethod: 'Fleksibel: Kelas Weekend, Kelas Malam Hybrid, atau Akses Daring Penuh melalui Portal Belajar Celah Cahaya.',
-    duration: '1 - 3 Tahun (Bisa jalur percepatan konversi nilai rapor bagi pindahan SMA/SMK)',
+    learningMethod: 'Jadwal fleksibel: pilihan kelas akhir pekan, kelas malam untuk pekerja, atau modul daring mandiri.',
+    duration: '1 - 3 Tahun (Tersedia konversi nilai rapor bagi siswa pindahan SMA/SMK)',
     requirements: [
-      'Fotokopi Ijazah SMP / MTs / Paket B dilegalisir (3 lembar)',
-      'Fotokopi Kartu Keluarga (KK) & KTP warga belajar',
-      'Buku rapor SMA/SMK sebelumnya & surat mutasi (khusus siswa pindahan)',
+      'Fotokopi Ijazah SMP / MTs / Paket B dilegalisasi (3 lembar)',
+      'Fotokopi Kartu Keluarga (KK) & KTP peserta',
+      'Buku rapor SMA/SMK dan surat pindah (khusus peserta pindahan)',
       'Pas foto 3x4 formal latar belakang merah (5 lembar)'
     ],
     benefits: [
-      'Ijazah diterbitkan resmi oleh Kemendikbudristek RI dengan Nomor Ijazah Nasional',
-      'Sah 100% untuk mendaftar kuliah PTN (SNBP, SNBT, Mandiri) dan PTS seluruh Indonesia',
-      'Dapat digunakan untuk seleksi CPNS, PPPK, TNI/Polri, BUMN, dan izin usaha',
-      'Bimbingan portofolio dan konsultasi persiapan masuk perguruan tinggi',
-      'Bonus pelatihan AI untuk Produktivitas & Keterampilan Digital Kerja'
+      'Ijazah resmi dari Kemendikbudristek dengan Nomor Ijazah Nasional',
+      'Sah untuk mendaftar kuliah ke PTN (SNBP, SNBT/UTBK, Jalur Mandiri) dan PTS',
+      'Dapat digunakan untuk mendaftar CPNS, PPPK, TNI/Polri, BUMN, dan legalitas usaha',
+      'Pendampingan penyusunan berkas dan konsultasi persiapan kuliah',
+      'Tambahan pelatihan keterampilan digital untuk menunjang karier'
     ],
-    tuitionFee: 'Transparan, Biaya Terjangkau, Bisa Dicicil Bulanan (Tersedia Beasiswa Prestasi)',
+    tuitionFee: 'Biaya Terjangkau & Bisa Diangsur Bulanan (Tersedia Beasiswa KIP)',
     scholarshipAvailable: true,
     image: 'https://blogger.googleusercontent.com/img/a/AVvXsEjO1GDsk9htNZC5gmuAlLN8btBxcF2jRQvAA01v1vdDlXK0YGWie4lf1V7NCH5y_IHPL5VpFOi-6vSJRNmfJA_zA_HFuVUL29ebu47x7G3iWTYMJG1miGAzHU_zMGiu44r6UAcQVuLCDFx-_9hBUyKXKtT7rbyDMruNLdwnuEHtBgR6Ac_TiK3xYBlPleUX',
     iconName: 'GraduationCap'
@@ -149,31 +149,31 @@ export const PROGRAMS_DATA: Program[] = [
   {
     id: 'vokasi-ai',
     slug: 'vokasi-ai',
-    name: 'Keterampilan Vokasi & AI untuk Pendidikan',
-    level: 'Sertifikasi Keterampilan Siap Kerja',
-    badge: 'Kurikulum Masa Depan',
-    targetAudience: 'Warga belajar kesetaraan dan masyarakat umum yang ingin memiliki keahlian digital bernilai ekonomi tinggi.',
-    description: 'Program pelatihan vokasi praktis yang memadukan penguasaan Artificial Intelligence (AI), pembuatan konten digital, pemasaran online UMKM, dan administrasi digital untuk membuka peluang kerja mandiri dan penghasilan.',
+    name: 'Keterampilan Vokasi & Literasi Digital',
+    level: 'Sertifikasi Keterampilan Praktis Siap Kerja',
+    badge: 'Keterampilan Praktis',
+    targetAudience: 'Warga belajar dan masyarakat umum yang ingin menambah keahlian digital untuk menunjang pekerjaan dan usaha mandiri.',
+    description: 'Pelatihan keterampilan terapan yang mengajarkan penggunaan komputer perkantoran, desain grafis sederhana, pemanfaatan internet untuk usaha, dan pengenalan alat bantu kecerdasan buatan (AI) secara produktif.',
     curriculum: [
-      'Dasar Pemanfaatan AI (Prompt Engineering) untuk Pembelajaran & Pekerjaan',
-      'Desain Grafis Canva & Branding Usaha',
-      'Manajemen Konten Media Sosial & Pemasaran Digital Lokal',
-      'Aplikasi Perkantoran Cloud (Google Workspace / Spreadsheets)',
-      'Etika Teknologi Informasi & Keamanan Digital'
+      'Pengenalan & Etika Penggunaan Kecerdasan Buatan (AI) untuk Produktivitas',
+      'Desain Grafis Praktis Menggunakan Canva untuk Promosi Usaha',
+      'Pengelolaan Media Sosial & Dasar Pemasaran Daring',
+      'Aplikasi Dokumen & Lembar Kerja Digital (Google Workspace)',
+      'Keamanan Akun & Etika Berinternet'
     ],
-    learningMethod: 'Praktik di Lab Komputer Celah Cahaya & proyek karya nyata berstandar industri.',
-    duration: '3 Bulan (Intensif 2x pertemuan per minggu)',
+    learningMethod: 'Praktik langsung di ruang komputer Celah Cahaya dengan bimbingan tutor pendamping.',
+    duration: '3 Bulan (Pertemuan intensif 2 kali per minggu)',
     requirements: [
-      'Warga belajar aktif Celah Cahaya atau umum minimal usia 15 tahun',
-      'Memiliki komitmen hadir dan mengerjakan proyek praktik',
-      'Fotokopi KTP / identitas diri'
+      'Warga belajar aktif Celah Cahaya atau masyarakat umum minimal usia 15 tahun',
+      'Berkomitmen mengikuti jadwal praktik sampai selesai',
+      'Fotokopi identitas diri (KTP / Kartu Pelajar)'
     ],
     benefits: [
-      'Sertifikat Keterampilan Resmi dari PKBM Celah Cahaya',
-      'Portofolio digital siap pakai untuk melamar kerja atau freelance',
-      'Jejaring komunitas dan pendampingan wirausaha di Garut'
+      'Sertifikat Keterampilan dari PKBM Celah Cahaya',
+      'Hasil karya nyata yang bisa dijadikan contoh portofolio kerja',
+      'Pendampingan konsultasi wirausaha mandiri di Garut'
     ],
-    tuitionFee: 'Gratis bagi Warga Belajar Aktif Celah Cahaya / Subsidi Khusus Pemuda Garut',
+    tuitionFee: 'Bebas Biaya untuk Warga Belajar Aktif Celah Cahaya',
     scholarshipAvailable: true,
     image: 'https://blogger.googleusercontent.com/img/a/AVvXsEhzv92AS5x8T1d_yb03d3eYhx3USNhsOvsALrZ4FYuxa00Fx_KAH57hsFQSQnjdLF7DyNY23kBY-fd6MHc0pM4mcN4xF0I771mx_vMr-AvFAt975RccG7QTHROLqfknUNqaDLlNrtRzyQZyjc4a9JH-SXkIdtqP0htlJ0sk0EhQ-aut1b9fzx7iwllAoGV8',
     iconName: 'Cpu'
@@ -353,7 +353,7 @@ Menunda melanjutkan pendidikan berarti menunda terbukanya berbagai peluang karie
       },
       {
         question: 'Apakah orang yang sudah berusia 30 atau 40 tahun ke atas masih boleh ikut Paket C?',
-        answer: 'Tentu saja boleh! Pendidikan kesetaraan di PKBM Celah Cahaya tidak membatasi usia maksimal. Kami mendampingi warga belajar usia remaja hingga dewasa.'
+        answer: 'Boleh. Program kesetaraan di PKBM Celah Cahaya tidak membatasi usia maksimal. Kami mendampingi warga belajar dari usia remaja hingga usia dewasa dengan pendekatan yang hangat dan saling menghargai.'
       },
       {
         question: 'Bagaimana sistem belajar bagi pekerja yang sibuk di hari kerja?',
@@ -581,13 +581,13 @@ Bagi anak usia sekolah (di bawah 21 tahun) yang berasal dari keluarga kurang mam
       { id: 'etika-ai', title: 'Etika & Batasan Penggunaan AI dalam Pendidikan', level: 2 }
     ],
     content: `
-Di era transformasi digital saat ini, pendidikan nonformal tidak boleh tertinggal. Di **PKBM Celah Cahaya**, kami secara proaktif mengintegrasikan materi literasi kecerdasan buatan (AI) ke dalam kurikulum pembelajaran warga belajar Paket C dan vokasi.
+Perkembangan teknologi membawa kemudahan baru bagi dunia pendidikan nonformal. Di **PKBM Celah Cahaya**, kami membimbing warga belajar Paket C dan kelas vokasi agar terbiasa memanfaatkan teknologi kecerdasan buatan (AI) secara bijak untuk membantu kegiatan belajar mandiri sehari-hari.
 
-## AI Sebagai Tutor Privat 24 Jam {#ai-sebagai-tutor}
-Tantangan terbesar siswa kesetaraan adalah keterbatasan waktu tatap muka karena kesibukan bekerja. Ketika belajar di malam hari dan menemukan rumus matematika atau tata bahasa Inggris yang rumit, kehadiran AI (seperti Gemini) menjadi solusi instan untuk:
-* Menjelaskan rumus rumit dengan perumpamaan kehidupan sehari-hari.
-* Memberikan latihan soal bertahap dari level mudah ke sulit.
-* Menerjemahkan istilah asing dan melatih percakapan bahasa Inggris bisnis.
+## AI Sebagai Pendamping Belajar Mandiri {#ai-sebagai-tutor}
+Tantangan umum bagi siswa kesetaraan adalah terbatasnya waktu tatap muka karena kesibukan bekerja. Saat belajar mandiri di malam hari dan menemukan rumus matematika atau tata bahasa yang sulit dipahami, kecerdasan buatan dapat dimanfaatkan untuk:
+* Menjelaskan materi yang rumit dengan contoh perumpamaan sederhana dari kehidupan sehari-hari.
+* Memberikan contoh latihan soal bertahap dari tingkat dasar ke yang lebih menantang.
+* Membantu menerjemahkan istilah asing dan melatih percakapan bahasa Inggris praktis.
 
 ## Contoh Prompt Efektif untuk Belajar {#prompt-belajar}
 Warga belajar Celah Cahaya diajarkan menggunakan instruksi terstruktur:
@@ -988,32 +988,32 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
   {
     id: 'testi-1',
     name: 'Asep Saepuloh',
-    role: 'Alumni Paket C Jurusan IPS (Lulus 2023)',
+    role: 'Alumni Paket C IPS (Lulusan 2023)',
     program: 'Paket C IPS',
     year: '2023',
-    quote: 'Dulu saya sempat putus sekolah waktu kelas 11 SMA karena harus bantu orang tua di kebun. Di Celah Cahaya, saya bisa belajar malam hari dan akhir pekan. Alhamdulillah sekarang sudah diterima kuliah di Universitas Pendidikan Indonesia (UPI) jurusan Pendidikan Geografi!',
+    quote: 'Waktu kelas 11 SMA dulu, saya terpaksa berhenti sekolah untuk bantu orang tua bertani. Sempat merasa masa depan tertutup, sampai akhirnya kenal PKBM Celah Cahaya. Jadwal belajarnya sangat fleksibel, tutornya sabar membimbing. Alhamdulillah, setelah lulus saya bisa ikut seleksi dan diterima di Universitas Pendidikan Indonesia (UPI) jurusan Pendidikan Geografi.',
     avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80',
-    currentActivity: 'Mahasiswa S-1 Universitas Pendidikan Indonesia'
+    currentActivity: 'Mahasiswa Universitas Pendidikan Indonesia'
   },
   {
     id: 'testi-2',
     name: 'Dewi Lestari',
-    role: 'Alumni Paket C & Vokasi Digital (Lulus 2024)',
-    program: 'Paket C & Kelas AI Digital',
+    role: 'Alumni Paket C & Kelas Keterampilan (Lulusan 2024)',
+    program: 'Paket C & Kelas Digital',
     year: '2024',
-    quote: 'Selain dapat ijazah negara resmi yang saya pakai untuk promosi jabatan di kantor distributor Garut, saya diajarkan keterampilan desain dan AI. Tutornya sangat mengayomi dan tidak ada stigma negatif sama sekali.',
+    quote: 'Saya butuh ijazah setara SMA untuk syarat penyesuaian posisi kerja di kantor. Di Celah Cahaya, selain materi pelajaran umum, kami juga diajarkan keterampilan komputer praktis yang langsung terpakai di pekerjaan harian. Suasana belajarnya hangat dan sangat menghargai murid yang sudah bekerja.',
     avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80',
-    currentActivity: 'Supervisor Administrasi Perusahaan Logistik di Garut'
+    currentActivity: 'Staf Administrasi Perusahaan Distribusi di Garut'
   },
   {
     id: 'testi-3',
     name: 'Rian Kurniawan',
-    role: 'Alumni Paket B & Paket C (Lulus 2022)',
+    role: 'Alumni Paket B & Paket C (Lulusan 2022)',
     program: 'Paket B & C Berkelanjutan',
     year: '2022',
-    quote: 'Saya merintis usaha bengkel motor di Samarang Garut. Butuh ijazah SMA untuk pengajuan izin usaha dan kemitraan resmi. Celah Cahaya memberikan solusi nyata. Biayanya transparan dan bisa dicicil sangat terjangkau.',
+    quote: 'Saya merintis usaha bengkel motor di Garut. Saat mau mengurus izin usaha dan memperluas kemitraan, kendalanya ada di ijazah terakhir. Belajar di Celah Cahaya membuat saya bisa tetap mengelola bengkel di siang hari dan belajar dengan terarah. Biayanya jelas dan bisa dicicil bulanan.',
     avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80',
-    currentActivity: 'Pemilik Usaha Bengkel & Wirausahawan Muda Garut'
+    currentActivity: 'Pengelola Bengkel Motor Mandiri di Garut'
   }
 ];
 
@@ -1021,43 +1021,43 @@ export const GENERAL_FAQS: FAQItem[] = [
   {
     id: 'faq-1',
     category: 'Legalitas & Ijazah',
-    question: 'Apakah ijazah yang diterbitkan oleh PKBM Celah Cahaya resmi dan diakui negara?',
-    answer: 'Ya, 100% resmi dan berpayung hukum nasional. PKBM Celah Cahaya merupakan satuan pendidikan swasta berbentuk Pusat Kegiatan Belajar Masyarakat (PKBM) pada jenjang Pendidikan Masyarakat (DIKMAS) dengan NPSN P9984574, berizin operasional resmi Dinas Pendidikan Kabupaten Garut (Nomor SK 421.9/1145-DISDIK, TMT 22 Juli 2019), dan terintegrasi di sistem Dapodik Kemendikbudristek RI. Ijazah yang Anda terima adalah Ijazah Negara dengan Nomor Ijazah Nasional yang sah.'
+    question: 'Apakah ijazah dari PKBM Celah Cahaya diakui resmi oleh negara?',
+    answer: 'Ya, resmi dan berkekuatan hukum penuh. PKBM Celah Cahaya adalah satuan pendidikan nonformal berizin operasional resmi dari Dinas Pendidikan Kabupaten Garut (SK No. 421.9/1145-DISDIK) dengan NPSN P9984574 dan tercatat aktif di Dapodik Kemendikbudristek. Ijazah yang diterbitkan adalah ijazah negara dengan Nomor Ijazah Nasional yang sah.'
   },
   {
     id: 'faq-2',
     category: 'Paket C & Kuliah',
-    question: 'Apakah lulusan Paket C bisa mendaftar kuliah di universitas negeri (PTN)?',
-    answer: 'Bisa sekali! Berdasarkan regulasi BPPP Kemendikbudristek, lulusan Paket C berhak mendaftar di Seleksi Nasional Berdasarkan Prestasi (SNBP), Seleksi Nasional Berdasarkan Tes (SNBT/UTBK), maupun Jalur Mandiri seluruh kampus negeri seperti UI, ITB, UNPAD, UPI, dsb., serta seluruh perguruan tinggi swasta.'
+    question: 'Apakah lulusan Paket C bisa mendaftar kuliah ke perguruan tinggi negeri (PTN)?',
+    answer: 'Bisa. Berdasarkan ketentuan resmi dari Kementerian Pendidikan, lulusan Paket C memiliki hak yang setara dengan lulusan SMA atau SMK untuk mendaftar ke perguruan tinggi negeri lewat jalur SNBP (prestasi rapor), SNBT (ujian UTBK), maupun jalur mandiri di seluruh kampus di Indonesia.'
   },
   {
     id: 'faq-3',
     category: 'Paket C & Kuliah',
-    question: 'Apakah ijazah Paket C bisa dipakai untuk mendaftar seleksi CPNS, PPPK, TNI, dan Polri?',
-    answer: 'Ya, bisa. Dalam ketentuan seleksi kepegawaian publik dan aparat negara, kualifikasi ijazah SLTA/Sederajat mengakui ijazah Paket C yang terdata resmi di Kemendikbudristek.'
+    question: 'Apakah ijazah Paket C bisa digunakan untuk daftar CPNS, PPPK, TNI, atau Polri?',
+    answer: 'Bisa. Pada setiap formasi seleksi yang mensyaratkan pendidikan minimal SMA/SMK atau sederajat, ijazah Paket C yang terdaftar di database kementerian diakui secara sah sesuai aturan kepegawaian negara.'
   },
   {
     id: 'faq-4',
     category: 'Biaya & Pendaftaran',
-    question: 'Berapa biaya pendidikan dan apakah ada program beasiswa gratis?',
-    answer: 'Biaya di Celah Cahaya sangat terjangkau dan dapat diangsur setiap bulan agar tidak memberatkan warga belajar. Kami juga menyediakan program beasiswa afirmasi bebas biaya 100% bagi anak usia sekolah dari keluarga pemegang Kartu Indonesia Pintar (KIP) atau terdaftar dalam DTKS.'
+    question: 'Berapa biaya pendidikannya dan apakah ada jalur beasiswa?',
+    answer: 'Biaya pendidikan dirancang ramah dan transparan, serta dapat dicicil per bulan agar tidak memberatkan warga belajar. Kami juga menyediakan beasiswa bebas biaya bagi anak usia sekolah dari keluarga pemegang Kartu Indonesia Pintar (KIP) atau yang tercatat dalam data sosial pemerintah.'
   },
   {
     id: 'faq-5',
     category: 'Metode Belajar',
-    question: 'Bagaimana jadwal belajar bagi warga yang bekerja penuh di hari kerja?',
-    answer: 'Kami menyediakan skema kelas tatap muka akhir pekan (Sabtu-Minggu) serta portal belajar online (LMS) mandiri. Anda tetap bisa bekerja di hari biasa dan menyelesaikan materi belajar secara fleksibel dari smartphone Anda.'
+    question: 'Bagaimana sistem belajar bagi warga yang bekerja penuh di hari biasa?',
+    answer: 'Kami menyediakan kelas tatap muka pada akhir pekan (Sabtu atau Minggu) yang dipadukan dengan modul belajar mandiri. Pola ini memudahkan Anda yang bekerja tetap bisa menyelesaikan pendidikan tanpa terganggu jam kantor atau pekerjaan harian.'
   },
   {
     id: 'faq-6',
     category: 'Umum',
-    question: 'Apakah ada batasan usia maksimal untuk mendaftar Paket A, B, atau C?',
-    answer: 'Tidak ada batasan usia maksimal. Pendidikan kesetaraan terbuka bagi semua warga negara: usia 15, 25, 35, 45 tahun bahkan lebih tetap kami layani dengan penuh dedikasi.'
+    question: 'Apakah ada batas usia maksimal untuk mendaftar?',
+    answer: 'Tidak ada batas usia maksimal. Program kesetaraan terbuka untuk siapa saja yang bertekad melanjutkan pendidikan, baik usia remaja, dewasa muda, maupun usia 30, 40, hingga 50 tahun ke atas.'
   },
   {
     id: 'faq-7',
     category: 'Legalitas & Ijazah',
-    question: 'Saya pernah sekolah sampai kelas 2 SMA lalu putus sekolah. Apakah harus mengulang dari kelas 1?',
-    answer: 'Tidak perlu mengulang dari awal jika Anda memiliki buku rapor dan surat pindah/keterangan dari sekolah lama. Nilai Anda akan dikonversikan sehingga Anda cukup melanjutkan semester yang belum terselesaikan.'
+    question: 'Jika saya pernah sekolah sampai kelas 2 SMA lalu berhenti, apakah harus mengulang dari awal?',
+    answer: 'Tidak perlu mengulang dari kelas 1 jika Anda membawa buku rapor dan surat pindah atau surat keterangan dari sekolah asal. Nilai mata pelajaran yang sudah Anda tempuh akan dikonversikan, sehingga Anda cukup melanjutkan tingkatan yang belum selesai.'
   }
 ];

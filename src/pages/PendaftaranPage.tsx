@@ -12,12 +12,13 @@ interface PendaftaranPageProps {
 
 export const PendaftaranPage: React.FC<PendaftaranPageProps> = ({ onNavigate }) => {
   const [submitted, setSubmitted] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [formData, setFormData] = useState({
     fullName: '',
     nik: '',
     phone: '',
     email: '',
-    district: 'Singajaya, Garut',
+    district: '',
     program: 'Paket C (Setara SMA)',
     lastEducation: 'SMP / MTs / Sederajat',
     learningMode: 'Hybrid (Tatap Muka Akhir Pekan & Daring)',
@@ -27,6 +28,7 @@ export const PendaftaranPage: React.FC<PendaftaranPageProps> = ({ onNavigate }) 
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     const { name, value, type } = e.target;
+    if (errorMessage) setErrorMessage(null);
     if (type === 'checkbox') {
       const { checked } = e.target as HTMLInputElement;
       setFormData(prev => ({ ...prev, [name]: checked }));
@@ -37,12 +39,12 @@ export const PendaftaranPage: React.FC<PendaftaranPageProps> = ({ onNavigate }) 
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formData.fullName || !formData.phone) {
-      alert('Mohon lengkapi nama dan nomor WhatsApp Anda.');
+    if (!formData.fullName.trim() || !formData.phone.trim()) {
+      setErrorMessage('Mohon lengkapi nama lengkap dan nomor WhatsApp aktif Anda.');
       return;
     }
 
-    // Save to local storage for demo persistence
+    // Simpan ke penyimpanan lokal peramban
     try {
       const existing = JSON.parse(localStorage.getItem('celah_cahaya_registrations') || '[]');
       existing.unshift({
@@ -124,10 +126,16 @@ export const PendaftaranPage: React.FC<PendaftaranPageProps> = ({ onNavigate }) 
       ) : (
         /* Registration Form */
         <form onSubmit={handleSubmit} className="bg-white p-6 sm:p-10 rounded-3xl border border-slate-200 shadow-sm space-y-6">
+          {errorMessage && (
+            <div className="p-4 rounded-xl bg-rose-50 border border-rose-200 text-rose-800 text-xs sm:text-sm font-semibold flex items-center space-x-2">
+              <span>{errorMessage}</span>
+            </div>
+          )}
+
           {/* Section 1: Pilihan Program */}
           <div className="space-y-4">
             <h3 className="text-base font-bold text-slate-900 border-b border-slate-100 pb-2">
-              1. Pilihan Program & Metode Belajar
+              1. Pilihan Program dan Cara Belajar
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>

@@ -174,7 +174,7 @@ export const ProgramDetailPage: React.FC<ProgramDetailPageProps> = ({ slug, onNa
           {/* Manfaat & Peluang Setelah Lulus */}
           <section className="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 space-y-4">
             <h2 className="text-lg sm:text-xl font-bold text-slate-900">
-              Keuntungan & Peluang Alumni {program.name}
+              Manfaat & Keunggulan {program.name}
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {program.benefits.map((benefit, i) => (
@@ -233,7 +233,7 @@ export const ProgramDetailPage: React.FC<ProgramDetailPageProps> = ({ slug, onNa
               onClick={() => onNavigate('/artikel/panduan-lengkap-pendidikan-kesetaraan-paket-c')}
               className="text-xs font-bold text-[#0284C7] hover:text-[#0369A1] flex items-center"
             >
-              <span>Baca Panduan Induk</span>
+              <span>Baca Panduan Lengkap</span>
               <ArrowRight className="w-3.5 h-3.5 ml-1" />
             </button>
           </div>

@@ -68,7 +68,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </span>
             </div>
             <p className="text-xs text-slate-400 leading-relaxed font-normal">
-              Pusat Kegiatan Belajar Masyarakat (PKBM) resmi di Garut yang berkomitmen menyelenggarakan pendidikan kesetaraan Paket B dan Paket C yang terpercaya, bermartabat, dan membekali peserta didik dengan kecakapan vokasi digital.
+              Pusat Kegiatan Belajar Masyarakat (PKBM) resmi di Garut yang menyelenggarakan pendidikan kesetaraan Paket A, Paket B, dan Paket C secara fleksibel, bermutu, serta membekali peserta didik dengan keterampilan terapan yang bermanfaat.
             </p>
             <div className="space-y-1.5 text-xs text-slate-400 pt-1">
               <div><strong>Status:</strong> Satuan Pendidikan Nonformal Swasta</div>
@@ -108,7 +108,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   className="hover:text-white transition-colors flex items-center space-x-1.5 text-left"
                 >
                   <ChevronRight className="w-3 h-3 text-[#0284C7]" />
-                  <span>Vokasi & Keterampilan AI Terapan</span>
+                  <span>Keterampilan Vokasi & Digital</span>
                 </button>
               </li>
               <li>
@@ -252,7 +252,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           <div className="text-center md:text-left space-y-1">
             <p>© {new Date().getFullYear()} PKBM Celah Cahaya Garut (celahcahaya.sch.id). Seluruh Hak Cipta Dilindungi Undang-Undang.</p>
             <p className="text-[11px] text-slate-600">
-              Disclaimer: Ijazah kesetaraan Paket B dan Paket C diterbitkan oleh Kemendikbudristek RI dengan hak hukum setara sekolah formal.
+              Catatan: Ijazah pendidikan kesetaraan Paket A, Paket B, dan Paket C diterbitkan secara resmi melalui Kemendikbudristek RI dengan pengakuan hukum yang setara dengan sekolah formal.
             </p>
           </div>
           

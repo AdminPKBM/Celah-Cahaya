@@ -47,7 +47,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
 
               {/* Mission Description */}
               <p className="text-base sm:text-lg text-stone-600 leading-relaxed font-normal max-w-2xl">
-                PKBM Celah Cahaya menghadirkan akses pendidikan kesetaraan <strong>Paket B</strong> dan <strong>Paket C</strong> resmi berijazah negara, fleksibel, inklusif, dan berkualitas tinggi — membuka kesempatan meraih pendidikan tinggi, karier formal, dan kemandirian berkarya.
+                PKBM Celah Cahaya menyediakan layanan pendidikan kesetaraan <strong>Paket A</strong>, <strong>Paket B</strong>, dan <strong>Paket C</strong> berijazah resmi negara dengan waktu belajar fleksibel — membuka jalan bagi Anda untuk melanjutkan kuliah, menunjang karier kerja, atau mengembangkan usaha mandiri.
               </p>
 
               {/* Institutional Action CTAs */}
@@ -82,7 +82,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 </div>
                 <div className="flex items-center space-x-2">
                   <CheckCircle2 className="w-4 h-4 text-[#0284C7] shrink-0" />
-                  <span>Eligibel UTBK-SNBT & CPNS</span>
+                  <span>Bisa Daftar UTBK & CPNS</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <CheckCircle2 className="w-4 h-4 text-[#0284C7] shrink-0" />

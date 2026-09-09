@@ -150,7 +150,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath, onNavigate }) => {
                     className="w-full text-left px-4 py-2 hover:bg-stone-50 text-stone-800 transition-colors border-t border-stone-100 mt-1"
                   >
                     <div className="font-semibold text-xs text-[#0F172A]">Keahlian Vokasi & Digital</div>
-                    <div className="text-[11px] text-stone-500">Kecakapan Hidup Abad 21</div>
+                    <div className="text-[11px] text-stone-500">Keterampilan Komputer & Usaha Mandiri</div>
                   </button>
                 </div>
               )}

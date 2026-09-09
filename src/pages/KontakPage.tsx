@@ -12,6 +12,7 @@ interface KontakPageProps {
 
 export const KontakPage: React.FC<KontakPageProps> = ({ onNavigate }) => {
   const [submitted, setSubmitted] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [form, setForm] = useState({
     name: '',
     phone: '',
@@ -22,10 +23,11 @@ export const KontakPage: React.FC<KontakPageProps> = ({ onNavigate }) => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!form.name || !form.phone || !form.message) {
-      alert('Mohon lengkapi nama, nomor telepon/WhatsApp, dan pesan Anda.');
+    if (!form.name.trim() || !form.phone.trim() || !form.message.trim()) {
+      setErrorMessage('Mohon lengkapi nama, nomor telepon/WhatsApp, dan pesan Anda.');
       return;
     }
+    setErrorMessage(null);
     setSubmitted(true);
   };
 
@@ -184,25 +186,37 @@ export const KontakPage: React.FC<KontakPageProps> = ({ onNavigate }) => {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
+                {errorMessage && (
+                  <div className="p-3.5 rounded-xl bg-rose-50 border border-rose-200 text-rose-800 text-xs font-semibold flex items-center space-x-2">
+                    <AlertCircle className="w-4 h-4 text-rose-600 shrink-0" />
+                    <span>{errorMessage}</span>
+                  </div>
+                )}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-xs font-semibold text-slate-700 mb-1">Nama Lengkap *</label>
                     <input
                       type="text"
                       value={form.name}
-                      onChange={(e) => setForm({ ...form, name: e.target.value })}
-                      placeholder="Nama Anda"
+                      onChange={(e) => {
+                        if (errorMessage) setErrorMessage(null);
+                        setForm({ ...form, name: e.target.value });
+                      }}
+                      placeholder="Contoh: Muhammad Ramdan"
                       required
                       className="w-full p-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm focus:ring-2 focus:ring-[#0284C7]"
                     />
                   </div>
                   <div>
-                    <label className="block text-xs font-semibold text-slate-700 mb-1">Nomor WhatsApp *</label>
+                    <label className="block text-xs font-semibold text-slate-700 mb-1">Nomor WhatsApp Aktif *</label>
                     <input
                       type="tel"
                       value={form.phone}
-                      onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                      placeholder="08xxxxxxxxxx"
+                      onChange={(e) => {
+                        if (errorMessage) setErrorMessage(null);
+                        setForm({ ...form, phone: e.target.value });
+                      }}
+                      placeholder="Contoh: 081234567890"
                       required
                       className="w-full p-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm focus:ring-2 focus:ring-[#0284C7]"
                     />
@@ -216,21 +230,24 @@ export const KontakPage: React.FC<KontakPageProps> = ({ onNavigate }) => {
                     onChange={(e) => setForm({ ...form, subject: e.target.value })}
                     className="w-full p-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm"
                   >
-                    <option value="Pertanyaan Pendaftaran Paket C">Pertanyaan Pendaftaran Paket C</option>
-                    <option value="Pertanyaan Pendaftaran Paket B / A">Pertanyaan Pendaftaran Paket B / A</option>
-                    <option value="Konfirmasi Pembayaran / Biaya">Konfirmasi Pembayaran / Biaya</option>
-                    <option value="Pengajuan Beasiswa KIP / Afirmasi">Pengajuan Beasiswa KIP / Afirmasi</option>
-                    <option value="Kerjasama Lembaga / CSR">Kerjasama Lembaga / CSR</option>
+                    <option value="Pertanyaan Pendaftaran Paket C">Pendaftaran Paket C (Setara SMA)</option>
+                    <option value="Pertanyaan Pendaftaran Paket B / A">Pendaftaran Paket B / Paket A</option>
+                    <option value="Konfirmasi Pembayaran / Biaya">Rincian Biaya dan Pilihan Cicilan</option>
+                    <option value="Pengajuan Beasiswa KIP / Afirmasi">Pengajuan Bantuan Beasiswa KIP</option>
+                    <option value="Kerjasama Lembaga / CSR">Kerja Sama Lembaga dan Komunitas</option>
                   </select>
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold text-slate-700 mb-1">Pesan Anda *</label>
+                  <label className="block text-xs font-semibold text-slate-700 mb-1">Pesan atau Pertanyaan Anda *</label>
                   <textarea
                     rows={4}
                     value={form.message}
-                    onChange={(e) => setForm({ ...form, message: e.target.value })}
-                    placeholder="Tuliskan pertanyaan atau kebutuhan Anda secara rinci..."
+                    onChange={(e) => {
+                      if (errorMessage) setErrorMessage(null);
+                      setForm({ ...form, message: e.target.value });
+                    }}
+                    placeholder="Tuliskan pertanyaan Anda dengan jelas agar tim kami dapat memberikan penjelasan yang tepat..."
                     required
                     className="w-full p-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm focus:ring-2 focus:ring-[#0284C7]"
                   />

@@ -96,7 +96,7 @@ export const ProgramsPage: React.FC<ProgramsPageProps> = ({ onNavigate }) => {
 
               {/* Requirements sample */}
               <div>
-                <div className="text-xs font-bold text-slate-900 mb-2">Beberapa Keunggulan Program:</div>
+                <div className="text-xs font-bold text-slate-900 mb-2">Keunggulan Utama:</div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                   {prog.benefits.slice(0, 4).map((benefit, i) => (
                     <div key={i} className="flex items-start space-x-2 text-xs text-slate-600">
@@ -113,13 +113,13 @@ export const ProgramsPage: React.FC<ProgramsPageProps> = ({ onNavigate }) => {
                   onClick={() => onNavigate(`/program/${prog.slug}`)}
                   className="px-5 py-2.5 bg-[#0284C7] hover:bg-[#0369A1] text-white font-bold text-xs rounded-xl transition-all shadow-xs cursor-pointer"
                 >
-                  Detail Kurikulum & Syarat
+                  Lihat Kurikulum & Syarat
                 </button>
                 <button
                   onClick={() => onNavigate('/pendaftaran')}
                   className="px-5 py-2.5 bg-white border border-slate-300 hover:bg-slate-50 text-slate-800 font-semibold text-xs rounded-xl transition-all cursor-pointer"
                 >
-                  Daftar Program Ini
+                  Daftar Sekarang
                 </button>
               </div>
             </div>
